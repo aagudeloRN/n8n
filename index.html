@@ -128,7 +128,8 @@
       try {
         const response = await fetch(webhookUrl, {
           method: 'POST',
-          body: formData
+          body: formData,
+          mode: 'cors'
         });
 
         if (response.ok) {
